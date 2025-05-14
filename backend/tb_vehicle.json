@@ -1,0 +1,13 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"db_dealer"},
+{"type":"table","name":"tb_vehicle","database":"db_dealer","data":
+[
+{"vehicle_id":"1","vehicle_name":"Alphard","vehicle_idCategory":"1","subVehicle_id":"1","subVehicle_name":"2.5 G A\/T","subVehicle_price":"1000000000","subVehicle_idVehicle":"1","subVehicle_idCategory":"1","category_id":"1","category_name":"MPV"},
+{"vehicle_id":"1","vehicle_name":"Alphard","vehicle_idCategory":"1","subVehicle_id":"2","subVehicle_name":"2.5 G A\/T","subVehicle_price":"2000000000","subVehicle_idVehicle":"1","subVehicle_idCategory":"1","category_id":"1","category_name":"MPV"},
+{"vehicle_id":"2","vehicle_name":"Innova Zenix","vehicle_idCategory":"1","subVehicle_id":"3","subVehicle_name":"Zenix 2.0 G CVT NPC","subVehicle_price":"423000000","subVehicle_idVehicle":"2","subVehicle_idCategory":"1","category_id":"1","category_name":"MPV"},
+{"vehicle_id":"2","vehicle_name":"Innova Zenix","vehicle_idCategory":"1","subVehicle_id":"4","subVehicle_name":"Zenix 2.0 G CVT PC","subVehicle_price":"419000000","subVehicle_idVehicle":"2","subVehicle_idCategory":"1","category_id":"1","category_name":"MPV"},
+{"vehicle_id":"2","vehicle_name":"Innova Zenix","vehicle_idCategory":"1","subVehicle_id":"5","subVehicle_name":"Zenix 2.0 G CVT PCg","subVehicle_price":"422000000","subVehicle_idVehicle":"2","subVehicle_idCategory":"1","category_id":"1","category_name":"MPV"}
+]
+}
+]

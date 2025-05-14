@@ -1,0 +1,74 @@
+{
+  "name": "testssr",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@react-oauth/google": "^0.12.1",
+    "@reduxjs/toolkit": "^2.2.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.104",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-horizontal-scrolling-menu": "^7.1.0",
+    "react-hot-toast": "^2.4.1",
+    "react-lazy-load-image-component": "^1.6.2",
+    "react-redux": "^9.1.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.23.1",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
+    "redux": "^5.0.1",
+    "redux-persist": "^6.0.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.11",
+    "@types/react-lazy-load-image-component": "^1.6.4",
+    "@types/react-redux": "^7.1.33",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-router-hash-link": "^2.4.9",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
