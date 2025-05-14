@@ -1,4 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
+import passport from "passport";
 import jwt from "jsonwebtoken";
 
 import { login, register } from "../controller/userController";
@@ -16,7 +17,7 @@ import {
 const router = express.Router();
 
 const expirationtimeInMs: any = process.env.JWT_EXPIRATION_TIME;
-const jwtsec: any = process.env.JWT_SECRET;
+const secret: any = process.env.JWT_SECRET;
 const axiosPrivate = axios.create({
   headers: {
     Accept: "application/json",
@@ -41,7 +42,7 @@ router.get("/login", login, async (req, res) => {
     expiration: Date.now() + parseInt(expirationtimeInMs),
   };
 
-  const token = jwt.sign(JSON.stringify(payload), jwtsec);
+  const token = jwt.sign(JSON.stringify(payload), secret);
 
   res
     .cookie("jwt", token, {
@@ -61,7 +62,7 @@ router.post(
     const jwt = req.body.jwt;
     // console.log(req.body.jwt);
     await axios
-      .get("userinfo", {
+      .get("https://www.googleapis.com/oauth2/v3/userinfo", {
         headers: { authorization: `Bearer ${jwt}` },
       })
       .then((data) => {
@@ -97,6 +98,16 @@ router.post(
   }
 );
 
+router.get(
+  "/protected",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    res.status(200).send({
+      message: "welcome to the protected route!",
+    });
+  }
+);
+
 router.get("/test", isAuth, (req: Request, res: Response) => {
   res.send("mantap");
   //   console.log("mantap");
@@ -108,7 +119,7 @@ router.post(
     const jwt = req.body.jwt;
 
     await axios
-      .get("userinfo", {
+      .get("https://www.googleapis.com/oauth2/v3/userinfo", {
         headers: { authorization: `Bearer ${jwt}` },
       })
       .then((data) => {
